@@ -1,0 +1,13 @@
+# Chặn thư mục Library và Temp ở bất kỳ đâu trong project
+/[Pp]lane[Rr]ocket/[Ll]ibrary/
+/[Pp]lane[Rr]ocket/[Tt]emp/
+/[Pp]lane[Rr]ocket/[Oo]bj/
+/[Pp]lane[Rr]ocket/[Bb]uild/
+/[Pp]lane[Rr]ocket/[Bb]uilds/
+/[Pp]lane[Rr]ocket/[Ll]ogs/
+
+# Chặn file của Visual Studio
+.vs/
+*.csproj
+*.sln
+*.userprefs
