@@ -58,12 +58,29 @@ public class Lander : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        
+        if (other.gameObject.tag == "LandingPad")
+        {
 
-        Debug.Log("other.relativeVelocity.magnitude");
+        } 
 
+
+
+        float dotLevel = Vector2.Dot(Vector2.up, transform.up);
+
+        if (dotLevel > 0.98f)
+        {
+            Debug.Log("Hạ cánh thẳng tắp! Tuyệt vời.");
+        }
+        else if (dotLevel > 0.90f)
+        {
+            Debug.Log("Hơi nghiêng nhưng vẫn ổn.");
+        }
+        else
+        {
+            Debug.Log("Hạ cánh bằng sườn rồi! BÙM!");
+        }
     }
 
 
